@@ -1,15 +1,73 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul,
 ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+.container {
+  max-width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 a {
   text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.main-header-container {
+  display: flex;
+  justify-content: space-between;
 }
 body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   color: #434455;
   background: #ffffff;
+}
+.main-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #000;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  column-gap: 40px;
+}
+.menu-address {
+  display: flex;
+  column-gap: 40px;
 }
 
 .logo {
@@ -20,6 +78,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .logo-span {
   color: #2e2f42;
@@ -54,8 +113,11 @@ body {
 .menu-address-link:focus {
   color: #404bbf;
 }
+/* Hero section */
 .hero-section {
   background-color: #2e2f42;
+  padding-bottom: 292px;
+  padding-top: 188px;
 }
 .hero-header {
   text-align: center;
@@ -64,8 +126,13 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 .hero-btn {
+  display: block;
   cursor: pointer;
   background: #4d5ae5;
   font-family: inherit;
@@ -75,12 +142,22 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  height: 56px;
+  min-width: 169px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background: #404bbf;
 }
 /* Features section */
+.features-section {
+  padding-top: 103px;
+  padding-bottom: 120px;
+}
 .header-features {
   font-size: 20px;
   font-weight: 500;
@@ -94,10 +171,19 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.menu-features {
+  display: flex;
+  column-gap: 24px;
+}
+.features-item {
+  width: calc(100% (3 * 24) / 4);
+}
 /* Features section */
 /* Our Team section */
 .team-section {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .header-team {
   text-align: center;
@@ -114,6 +200,10 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+}
+.header-team {
+  margin-bottom: 72px;
 }
 .text-name {
   font-size: 16px;
@@ -123,8 +213,17 @@ body {
 }
 .team-item {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+}
+.menu-team {
+  display: flex;
+  column-gap: 24px;
+}
+.container-team {
+  padding: 32px 16px;
 }
 /* Our Team section */
+
 /* Portfolio Section */
 .header-portfolio {
   text-align: center;
@@ -134,6 +233,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .header-item {
   font-size: 20px;
@@ -141,6 +241,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .text-portfolio {
   font-size: 16px;
@@ -149,10 +250,29 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.menu-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.container-portfolio-item {
+  padding: 32px 16px;
+  border-right: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-left: 1px solid var(--CORNFLOWER, #e7e9fc);
+}
 /* Portfolio Section */
+
 /* Footer Section */
 .footer-section {
   background-color: #2e2f42;
+  padding-top: 102px;
+  padding-bottom: 100px;
 }
 .logothype {
   font-family: Raleway, sans-serif;
@@ -163,6 +283,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 18px;
 }
 .logothype-span {
   color: #f4f4fd;
@@ -173,5 +294,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
 }
 /* Footer Section */
